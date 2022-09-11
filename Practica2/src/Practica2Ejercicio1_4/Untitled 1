@@ -1,0 +1,5 @@
+¿Qué diferencia encuentra entre las implementaciones de los puntos anteriores?
+(Lista enteros enlazada   y    lista de entero con arreglos)
+
+la diferencia recae en la estructura de ambas lista y en la manera de acceder
+a los datos que van guardando 
