@@ -1,0 +1,3 @@
+Implemente un método en la clase ArbolGeneral con la siguiente firma:
+public Boolean esAncestro(T a, T b): devuelve true si el valor a es ancestro del valor b. 
+El cual determine si un valor a es ancestro de un valor b. 

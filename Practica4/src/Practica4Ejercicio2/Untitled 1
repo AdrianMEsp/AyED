@@ -1,0 +1,29 @@
+a) ¿Qué recorridos conoce para recorrer en profundidad un árbol general? Explique brevemente.
+
+Conocemos lo recorridos:
+	InOrder: Primero procesamos el hijo izquierdo, luego la raiz y finalmente el hijo derecho
+	PreOrder: Primero procesamos la raiz, luego el hijo izquierdo y finalmente el hijo derecho
+	PostOrder: Primero procesamos el hijo izquierdo, luego el hijo derecho y finalmente la raiz
+
+b) ¿Qué recorridos conoce para recorrer por niveles un árbol general? Explique brevemente.
+
+Para recorrer un arbol por niveles utilizamos el PreOrden, que nos permite procesar los datos
+por nivel en que se encuentran
+
+c) ¿Existe alguna diferencia entre los recorridos preorden, postorden, inorden para recorrer los 
+árboles generales respecto de los árboles binarios? Justifique su respuesta.
+
+La diferencia recae en que pueden tener mas de dos hijos por lo que debemos procesar el mas izquierdo
+como hijo izquierdo y el resto como hijos derechos , funciona de igual manera para los hijos derechos
+
+d) ¿Existe alguna noción de orden entre los elementos de un árbol general? Justifique su respuesta.
+
+Si existe orden, los hermanos mas izquierdos seran menores a los mas derechos , funciona de 
+igual manera para los hijos
+
+e) En un árbol general se define el grado de un nodo como el número de hijos de ese nodo y el grado 
+del árbol como el máximo de los grados de los nodos del árbol. ¿Qué relación encuentra entre los 
+Árboles Binarios sin tener en cuenta la implementación? Justifique su respuesta. 
+
+La relacion es que los Arboles binarios pueden ser de grado 0,1 o 2. En cambio un arbol general
+puede ser de Orden N
