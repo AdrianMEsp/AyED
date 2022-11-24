@@ -1,6 +1,10 @@
+/*
+Recorrido de un Grafo desde DatoA hasta DatoB pasando por datoC , sin pasar por datoD
+*/
+
 public class EP{
 
- public <T> void dfs(GRafo<T> grado, T dato, T datoB ){
+ public <T> void dfs(GRafo<T> grado, T dato, T datoB ,T datoC ,T datoD ){
   //buscar el vertice que tiene el dato
    Vertice<T> vertice;
    //java inicializa el arreglo de boolean en False por defecto
