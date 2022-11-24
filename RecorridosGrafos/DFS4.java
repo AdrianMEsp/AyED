@@ -1,3 +1,7 @@
+/*
+Recorrido de un Grafo desde DatoA hasta DatoB pasando por datoC , sin pasar por datoD, con el camino mas
+largo pero cuyo peso sea menor a un MaxLimit
+*/
 package EP;
 
 import ejercicio3.Arista;
