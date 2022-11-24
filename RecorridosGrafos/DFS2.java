@@ -1,3 +1,7 @@
+/*
+Recorrido de un Grafo desde DatoA hasta DatoB
+*/
+
 public class EP{
 
  public <T> void dfs(GRafo<T> grado, T dato, T datoB){
