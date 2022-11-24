@@ -31,3 +31,35 @@ private void dfs_private(Grafo<T> grado, Vertice<T> vertice; boolean[] visitados
   
   visitados[vertice.posicion] = false;
 }
+//linea-55
+
+///me faltan lineas aca
+
+//linea-91
+ColaGenerica<Vertice<T>> cola;
+cola.encolar(vertice);
+cola.enconlar(null);
+
+while (!cola.esVacia()){
+ Vertice<T> vAux=cola.desencolar();
+ if(vAux != null){
+  System.out.println(vAux.dato());
+  
+  ListaEnlazadaGenerica<Arista<T>> aristas = grafo.listaDeAdyacentes(vAux);
+  aristas.comenzar();
+  while(!aristas.fin()){
+   Arista<T> arista = aristas.proximo();
+   Vertice<T> vDest = arista.verticeDestino();
+   
+   if(!visitados[vDest.posicion()]){
+    visitados[vDest.posicion()] = true;
+    cola.encolar(vDest);
+    
+  }
+ }
+}else{
+  if (!cola.esVacia()){
+   cola.encolar(null);
+  }
+  
+  //linea-117
