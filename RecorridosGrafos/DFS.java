@@ -3,6 +3,7 @@ public class EP{
  public <T> void dfs(GRafo<T> grado, T dato){
   //buscar el vertice que tiene el dato
    Vertice<T> vertice;
+  //Java inicializa el arreglo de Boolean en False
    boolean [] visitados = new boolean [grafo.listaDeVertices().tamanio()];
    ListaEnlazadaGenerica<Vertice<T>> vertices = Grafo.listaDeVertices();
    vertices.comenzar();
@@ -22,7 +23,7 @@ public class EP{
    System.out.println(vertice.dato());
 
    //llamar a recurcion
-   ListaEnlazadaGenerica<Arista<T>> arista = grafo.listaDeAdyacentes(vertice);
+   ListaEnlazadaGenerica<Arista<T>> aristas = grafo.listaDeAdyacentes(vertice);
    aristas.comenzar();
    while(!aristas.fin()){
      Arista<T> arista = aristas.proximo();
