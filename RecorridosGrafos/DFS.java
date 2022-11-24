@@ -1,5 +1,5 @@
 /*
-Recorrido de un Grafo desde DatoA hasta DatoB
+Recorrido de un Grafo desde DatoA 
 */
 
 public class EP{
