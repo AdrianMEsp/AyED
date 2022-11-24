@@ -7,7 +7,7 @@ public class EP{
    ListaEnlazadaGenerica<Vertice<T>> vertices = Grafo.listaDeVertices();
    vertices.comenzar();
    while(!vertices.fin()){
-    vertices=vertices.proximo();
+     vertices=vertices.proximo();
      if(vertice.dato().equals(dato)){
        break;
      }
