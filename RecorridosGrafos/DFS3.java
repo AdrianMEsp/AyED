@@ -8,7 +8,7 @@ public class EP{
    ListaEnlazadaGenerica<Vertice<T>> vertices = Grafo.listaDeVertices();
    vertices.comenzar();
    while(!vertices.fin()){
-    vertices=vertices.proximo();
+     vertices=vertices.proximo();
      if(vertice.dato().equals(dato)){
        break;
      }
@@ -42,7 +42,6 @@ public class EP{
      //limpio la lista
      camino.comenzar();
      while(!camino.fin()){
-      
        camino.eliminarEn(camino.tamanio());
        camino.proximo();
      }
@@ -50,20 +49,20 @@ public class EP{
      //actualizo la lista camino con la temporal
      temporal.comenzar();
      while(!temporal.fin()){
-      camino.agregarFinal(temporal.proximo()); 
+       camino.agregarFinal(temporal.proximo()); 
      }
       
    }else {
    
-    if (vertice.dato().equals(datoB)){
-     //llamar recursivamente
-     ListaEnlazadaGenerica<Aristas<T>> aristas = grafo.listaDeAdyacentes(vertice);
-     aristas.comenzar();
-     while(!aristas.fin()){
-      Arista<T> arista = aristas.proximo();
-      Vertice<T> vDest = arista.verticeDestino();
-      if(!visitados[vDest.posicion()] && !vDest.dato().equals(sinPasarPor))
-        this.dfs_private(grafo,vDest,visitados,datoB,camino,temporal,encontre,pasandoPor,encontre,sinPasarPor);
+     if (vertice.dato().equals(datoB)){
+       //llamar recursivamente
+       ListaEnlazadaGenerica<Aristas<T>> aristas = grafo.listaDeAdyacentes(vertice);
+       aristas.comenzar();
+       while(!aristas.fin()){
+         Arista<T> arista = aristas.proximo();
+         Vertice<T> vDest = arista.verticeDestino();
+         if(!visitados[vDest.posicion()] && !vDest.dato().equals(sinPasarPor))
+           this.dfs_private(grafo,vDest,visitados,datoB,camino,temporal,encontre,pasandoPor,encontre,sinPasarPor);
      }
    }
      
