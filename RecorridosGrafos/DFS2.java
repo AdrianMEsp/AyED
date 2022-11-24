@@ -1,14 +1,14 @@
 public class EP{
 
  public <T> void dfs(GRafo<T> grado, T dato, T datoB){
-  //buscar el vertice que tiene el dato
+   //buscar el vertice que tiene el dato
    Vertice<T> vertice;
    //java inicializa el arreglo de boolean en False por defecto
    boolean [] visitados = new boolean [grafo.listaDeVertices().tamanio()];
    ListaEnlazadaGenerica<Vertice<T>> vertices = Grafo.listaDeVertices();
    vertices.comenzar();
    while(!vertices.fin()){
-    vertices=vertices.proximo();
+     vertices=vertices.proximo();
      if(vertice.dato().equals(dato)){
        break;
      }
@@ -41,7 +41,7 @@ public class EP{
      
      temporal.comenzar();
      while(!temporal.fin()){
-      camino.agregarFinal(temporal.proximo()); 
+       camino.agregarFinal(temporal.proximo()); 
      }
       
    }else {
@@ -49,10 +49,10 @@ public class EP{
      ListaEnlazadaGenerica<Aristas<T>> aristas = grafo.listaDeAdyacentes(vertice);
      aristas.comenzar();
      while(!aristas.fin()){
-      Arista<T> arista = aristas.proximo();
-      Vertice<T> vDest = arista.verticeDestino();
-      if(!visitados[vDest.posicion()])
-        this.dfs_private(grafo,vDest,visitados,datoB,camino,temporal);
+       Arista<T> arista = aristas.proximo();
+       Vertice<T> vDest = arista.verticeDestino();
+       if(!visitados[vDest.posicion()])
+         this.dfs_private(grafo,vDest,visitados,datoB,camino,temporal);
    }
      
    visitados[vertice.posicion] = false;
