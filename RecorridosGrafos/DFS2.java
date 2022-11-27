@@ -7,6 +7,8 @@ public class EP{
  public <T> void dfs(GRafo<T> grado, T dato, T datoB){
    //buscar el vertice que tiene el dato
    Vertice<T> vertice;
+   ListaGenerica<T> camino = new ListaEnlazadaGenerica<T>();
+   ListaGenerica<T> temporal= new ListaEnlazadaGenerica<T>();
    //java inicializa el arreglo de boolean en False por defecto
    boolean [] visitados = new boolean [grafo.listaDeVertices().tamanio()];
    ListaEnlazadaGenerica<Vertice<T>> vertices = Grafo.listaDeVertices();
