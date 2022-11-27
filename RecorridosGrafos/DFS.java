@@ -4,7 +4,7 @@ Recorrido de un Grafo desde DatoA
 
 public class EP{
 
- public <T> void dfs(GRafo<T> grado, T dato){
+ public <T> void dfs(Grafo<T> grafo, T dato){
   //buscar el vertice que tiene el dato
    Vertice<T> vertice;
   //Java inicializa el arreglo de Boolean en False
@@ -22,7 +22,7 @@ public class EP{
    }
  }
 
- private void dfs_private(Grafo<T> grado, Vertice<T> vertice; boolean[] visitados){
+ private void dfs_private(Grafo<T> grafo, Vertice<T> vertice; boolean[] visitados){
   //procesar el dato
    System.out.println(vertice.dato());
 
